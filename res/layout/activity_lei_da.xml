@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeiDaActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/leidamapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+    
+    <Button 
+        android:id="@+id/myPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="我的位置"/>
+    
+    <Button
+        android:id="@+id/btnLeida" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/myPosition"
+        android:enabled="false"
+        android:text="开启雷达"/>
+    
+    <Button 
+        android:id="@+id/btnQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnLeida"
+        android:text="轨迹实时查询"/>
+    
+    <Button 
+        android:id="@+id/btnQueryHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnQuery"
+        android:text="轨迹历史查询"/>
+    
+    <Button 
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="出发"/>
+    
+    <Button 
+        android:id="@+id/traceStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/go"
+        android:text="关闭轨迹服务"/>
+    
+    <Button 
+        android:id="@+id/traceStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/traceStop"
+        android:text="开启轨迹服务"/>
+    
+    
+    
+    <TextView 
+        android:id="@+id/myPositionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:singleLine="true"
+        />
+    
+    <TextView
+        android:id="@+id/numberofpeople" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myPositionTv"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:singleLine="true"/>
+
+</RelativeLayout>

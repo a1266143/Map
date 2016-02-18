@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoActivity" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你要去哪儿？"
+        android:textColor="#eee"/>
+    
+    <RadioGroup
+        android:id="@+id/radiogroup" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/jiache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="驾车线路"
+            android:checked="true"/>
+        <RadioButton 
+            android:id="@+id/buxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步行线路"/>
+        <RadioButton 
+            android:id="@+id/qiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="骑车线路"/>
+    </RadioGroup>
+
+    <EditText 
+        android:id="@+id/startpoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/qidian"
+        android:drawablePadding="5dp"
+        android:hint="我的位置(默认是我的位置)"/>
+    
+    <EditText 
+        android:id="@+id/endpoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/zhongdian"
+        android:drawablePadding="5dp"
+        android:hint="终点"/>
+    
+    <Button
+        android:id="@+id/btnSearch" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查找路线"/>
+
+</LinearLayout>

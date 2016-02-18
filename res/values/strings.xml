@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="latitude">纬度</string>
+    <string name="longitude">经度</string>
+    <string name="confirm">确定</string>
+    <string name="add">增加一个标注点做测试</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_ding_wei">DingWeiActivity</string>
+    <string name="title_activity_rout_line">RoutLineActivity</string>
+    <string name="title_activity_lei_da">LeiDaActivity</string>
+    <string name="title_activity_go">出发</string>
+
+</resources>
